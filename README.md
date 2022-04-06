@@ -17,6 +17,10 @@ This will create a new directory in your current path (i.e. at _./[project-name]
 
 ### Connect to an Azure SQL
 https://github.com/dbt-msft/dbt-sqlserver
+https://docs.getdbt.com/reference/warehouse-profiles/mssql-profile
+
+Example profile:
+https://github.com/dbt-msft/dbt-sqlserver/blob/master/test/integration/sample.profiles.yml
 
 
 ### Copy data from one table to the next

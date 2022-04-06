@@ -8,6 +8,8 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+python-dbt/
+python39-dbt/
 build/
 develop-eggs/
 dist/
