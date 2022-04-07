@@ -5,6 +5,8 @@ Seed data is manually created to support the test cases.
 
 dbt seed
 
+Seeds are overwritten when changed
+
 ## iban
 For generating realistic iban numbers, a public generator is used:
 http://www.randomiban.com/?country=Netherlands

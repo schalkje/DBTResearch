@@ -4,9 +4,19 @@ seeds:
   - name: raw_account 
     config:
       alias: account
-      schema: raw
-      column_tyes:
+      schema: raw_payments
+      column_types:
         id_account: int
         account_type: varchar(20)
         iban: varchar(50)
     
+  - name: raw_transaction 
+    config:
+      alias: transaction
+      schema: raw_payments
+      column_types:
+        id_transactions: int
+        fk_account: int
+        direction: varchar(10)
+        amount: decimal(12,3)
+        counterparty: varchar(50)

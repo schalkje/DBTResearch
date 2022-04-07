@@ -1,0 +1,11 @@
+version: 2
+
+seeds:
+  - name: raw_client
+    config:
+      alias: client
+      schema: raw_crm
+      column_types:
+        id: int
+        last_name: varchar(50)
+        first_name: varchar(50)
