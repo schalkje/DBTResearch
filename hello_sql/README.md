@@ -1,5 +1,16 @@
 Welcome to your new dbt project!
 
+# Seed data
+Seed data is manually created to support the test cases.
+
+dbt seed
+
+## iban
+For generating realistic iban numbers, a public generator is used:
+http://www.randomiban.com/?country=Netherlands
+
+_This is fully random and doesn't contain a reference to real accounts; where by chance it is an existing account this is not intentional._
+
 ### Using the starter project
 
 Try running the following commands:

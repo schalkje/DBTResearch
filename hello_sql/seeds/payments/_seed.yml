@@ -1,0 +1,12 @@
+version: 2
+
+seeds:
+  - name: raw_account 
+    config:
+      alias: account
+      schema: raw
+      column_tyes:
+        id_account: int
+        account_type: varchar(20)
+        iban: varchar(50)
+    

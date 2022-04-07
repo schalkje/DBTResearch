@@ -1,0 +1,50 @@
+
+version: 2
+
+models:
+  - name: account
+    description: "Payment accounts"
+    columns:
+      - name: id_account
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: iban
+        description: iban number of the account
+        tests:
+          - unique
+          - not_null
+      - name: account_type
+        description: '{{ doc("account_type") }}'
+        tests:
+          - unique
+          - not_null
+          - accepted_values:
+              values: ['payments', 'saving']
+
+  - name: transaction
+    description: "Financial transactions to and from a payment account"
+    columns:
+      - name: id_transactions
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: fk_account
+        description: "Foreign key to the account"
+        tests:
+          - not_null
+      - name: direction
+        description: >
+          # Direction of the transaction
+          POossible values:
+          - inflow
+          - outflow
+        tests:
+          - accepted_values:
+              values: ['inflow', 'outflow']
+      - name: amount
+        description: "Amount of the transaction"
+      - name: counterparty
+        description: "Name of the counterparty"

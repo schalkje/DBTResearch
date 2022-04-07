@@ -1,0 +1,1 @@
+& ".\python39-dbt\Scripts\activate.ps1"
