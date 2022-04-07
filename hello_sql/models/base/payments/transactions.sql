@@ -2,4 +2,4 @@
 
 
 select *
-from raw_payments.transaction
+from raw_payments.transactions
