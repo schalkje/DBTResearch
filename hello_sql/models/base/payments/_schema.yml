@@ -3,6 +3,7 @@ version: 2
 
 models:
   - name: account
+    schema: base_payments
     description: "Payment accounts"
     columns:
       - name: id_account
@@ -18,15 +19,14 @@ models:
       - name: account_type
         description: '{{ doc("account_type") }}'
         tests:
-          - unique
           - not_null
           - accepted_values:
               values: ['payments', 'saving']
-
-  - name: transaction
+  - name: transactions
+    schema: base_payments
     description: "Financial transactions to and from a payment account"
     columns:
-      - name: id_transactions
+      - name: id_transaction
         description: "The primary key for this table"
         tests:
           - unique
@@ -36,14 +36,7 @@ models:
         tests:
           - not_null
       - name: direction
-        description: >
-          # Direction of the transaction
-          POossible values:
-          - inflow
-          - outflow
-        tests:
-          - accepted_values:
-              values: ['inflow', 'outflow']
+        description: bla
       - name: amount
         description: "Amount of the transaction"
       - name: counterparty

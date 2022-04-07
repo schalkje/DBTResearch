@@ -15,7 +15,7 @@ seeds:
       alias: transaction
       schema: raw_payments
       column_types:
-        id_transactions: int
+        id_transaction: int
         fk_account: int
         direction: varchar(10)
         amount: decimal(12,3)

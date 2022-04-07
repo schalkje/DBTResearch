@@ -1,10 +1,10 @@
-id_transactions,fk_account,direction,amount,counterparty
+id_transaction,fk_account,direction,amount,counterparty
 1,2,inflow,12.65,NL69RABO9966705163
 2,1,inflow,12.65,NL69RABO9966705164
 3,2,inflow,12.65,NL69RABO9966705163
 4,1,inflow,12.65,NL69RABO9966705165
-5,2,inflow,12.65,NL69RABO9966705163
+5,2,outflow,12.65,NL69RABO9966705163
 6,3,inflow,12.65,NL69RABO9966705163
 7,3,inflow,17.35,NL69RABO9966705167
-8,2,inflow,12.65,NL69RABO9966705163
+8,2,outflow,12.65,NL69RABO9966705163
 9,2,inflow,12.65,NL69RABO9966705164
